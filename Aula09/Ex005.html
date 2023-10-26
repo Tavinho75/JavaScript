@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 13pt arial;
+        }
+
+        h2 {
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1 name="h">Iniciando os estudos do DOM</h1>
+    <h2 id="sbtl">Olá! Eu me chamo Luis Otavio e estou aprendendo a usar o <strong>DOM</strong></h2>
+    <p class="pr">Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var p2 = document.getElementsByTagName('p')[1]
+
+
+        var titulo = document.getElementsByName('h')[0]
+        titulo.style.background = 'black'
+
+
+        var corpo = document.body
+
+
+        var d = document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou Aguardando...'
+
+
+        var p1 = document.getElementsByClassName('pr')[0]
+        p1.style.color = 'red'
+
+        var subtitulo = document.querySelector('h2#sbtl')
+        subtitulo.style.color = 'cornflowerblue'
+        subtitulo.style.background = 'white'
+    </script>
+</body>
+</html>
+
+<!--
+Por Marca = getElementsByTagName()
+Por ID = getElementById
+Por Nome = getElementsByName()
+Por Classe = getElementsByClassName()
+Por Seletor = 
+-->
